@@ -1,0 +1,16 @@
+Title,Description,List
+Preparar ambiente,"Instalar Node.js, VSCode, configurar Firebase e GitHub",Backlog
+Criar repositórios GitHub,Repositórios separados para Challenge 1 e 2,Backlog
+Fazer wireframes,Layout do chat e do app Know Your Fan,Backlog
+Iniciar projeto React Chat,Landing page + chat mockado,Backlog
+Iniciar projeto Know Your Fan,Estrutura base de front-end e back-end,Backlog
+Modelar Banco de Dados,"Firebase/Supabase: usuários, documentos, redes sociais",Backlog
+Implementar cadastro de perfil,"Nome, endereço, CPF, etc",Backlog
+Melhorar chat,"Simular torcida, status de partidas",Backlog
+Upload de documentos,Firebase Storage + API IA para validação,Backlog
+Integração Redes Sociais,OAuth + vinculação de Instagram/Twitter,Backlog
+Validação de perfis,Usar IA para validar links e páginas de esports,Backlog
+Testes e QA,Testar todas as funcionalidades,Backlog
+Gravar vídeo,Demonstração de ~3min cada desafio,Backlog
+Documentação GitHub,README + Prints/GIFs,Backlog
+Submissão final,Formulário e links GitHub + vídeos,Backlog
