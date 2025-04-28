@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# 🕹️ FURIA Fan Chat - Challenge 1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Sobre o Projeto
 
-## Available Scripts
+O FURIA Fan Chat é uma plataforma conversacional desenvolvida para proporcionar uma experiência imersiva aos fãs do time de CS:GO da FURIA.  
+O objetivo é criar um espaço interativo onde os fãs possam acompanhar partidas em tempo real, simular conversas de torcida e se manter conectados com o time de forma divertida e dinâmica.
 
-In the project directory, you can run:
+Este projeto foi desenvolvido como parte do processo seletivo para Assistente de Engenharia de Software da FURIA Tech.
 
-### `npm start`
+## 🎯 Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Landing Page de Boas-Vindas ao chat da FURIA.**
+- **Sistema de Chat Simulado:**
+  - Mensagens do time e dos fãs em tempo real.
+  - Experiência de torcida durante as partidas.
+- **Atualizações ao Vivo (Live Status):**
+  - Status do jogo atualizado na tela do chat.
+- **Experiência fluida e responsiva para desktop e mobile.**
+- **Design inspirado em comunidades gamers e esportivas.**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧩 Tecnologias Utilizadas
 
-### `npm test`
+- **Front-end:** React.js  
+- **Back-end (opcional):** Node.js + WebSocket (para simular interações em tempo real)  
+- **Banco de Dados (opcional para mensagens reais):** Firebase Firestore  
+- **Hospedagem:** Vercel  
+- **Estilização:** TailwindCSS  
+- **Versionamento:** Git & GitHub  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏗️ Estrutura do Projeto
 
-### `npm run build`
+```
+furia-fan-chat/
+├── public/
+│   └── assets/
+├── src/
+│   ├── components/
+│   │   ├── ChatBox.jsx
+│   │   ├── Message.jsx
+│   │   ├── InputMessage.jsx
+│   ├── pages/
+│   │   └── Home.jsx
+│   ├── services/
+│   │   └── (simulações de API para live status)
+│   └── App.jsx
+├── README.md
+└── package.json
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Como Rodar o Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (v18 ou superior)  
+- NPM ou Yarn instalado  
 
-### `npm run eject`
+### Instalação
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/furia-fan-chat.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Acesse a pasta do projeto
+cd furia-fan-chat
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Instale as dependências
+npm install
+# ou
+yarn install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Rode o projeto
+npm run start
+# ou
+yarn start
+```
 
-## Learn More
+## 🎥 Demonstração em Vídeo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Assista o vídeo demonstrativo com todas as funcionalidades clicando aqui:  
+🔗 **Link para o vídeo no YouTube (substituir pelo link final)**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📄 Referências e Inspirações
 
-### Code Splitting
+- [Chat Inteligente FURIA (Closed Beta - WhatsApp)](https://wa.me/5511993404466)  
+- Conceitos de Live Chat em apps esportivos.  
+- Experiência de comunidades no Discord e Twitch.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 👨‍💻 Autor
 
-### Analyzing the Bundle Size
+Feito com muita dedicação por Matheus [Seu Sobrenome].  
+Buscando sempre entregar soluções criativas e eficientes no universo de tecnologia e e-sports. 🎮🚀
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🎯 Conclusão
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O FURIA Fan Chat é mais do que um chat — é uma experiência pensada para o fã vibrar junto com o time, fortalecendo ainda mais a paixão pelo universo competitivo dos e-sports!
