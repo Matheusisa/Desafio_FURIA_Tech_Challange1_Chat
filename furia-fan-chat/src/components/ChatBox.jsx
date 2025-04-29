@@ -1,18 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Message from './Message';
 import InputMessage from './InputMessage';
+import { getLiveStatus } from '../services/liveStatus';
 
 const ChatBox = () => {
   const [messages, setMessages] = useState([
     { id: 1, sender: 'FURIA', text: 'Bem-vindo ao chat oficial da FURIA! 🔥' },
-    { id: 2, sender: 'Fã', text: 'VAMOOOO FURIAAAAAAAA!' }
+    { id: 2, sender: 'Fã', text: 'VAMOOO FURIAAAA!' }
   ]);
+
+  const messagesEndRef = useRef(null);
 
   const handleSend = (msg) => {
     if (!msg.trim()) return;
     setMessages([...messages, { id: messages.length + 1, sender: 'Você', text: msg }]);
   };
 
+  // Scroll automático sempre que uma nova mensagem for adicionada
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const status = getLiveStatus();
+      setMessages(prev => [...prev, {
+        id: prev.length + 1,
+        sender: 'FURIA',
+        text: status
+      }]);
+    }, 8000); // A cada 8 segundos
+  
+    return () => clearInterval(interval); // limpa ao sair
+  }, []);
+  
   return (
     <div style={{
       backgroundColor: '#0d0d0d',
@@ -48,6 +69,7 @@ const ChatBox = () => {
         {messages.map(msg => (
           <Message key={msg.id} sender={msg.sender} text={msg.text} />
         ))}
+        <div ref={messagesEndRef} />
       </div>
 
       <InputMessage onSend={handleSend} />
