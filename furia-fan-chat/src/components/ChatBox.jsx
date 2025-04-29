@@ -13,14 +13,15 @@ const ChatBox = () => {
 
   const handleSend = (msg) => {
     if (!msg.trim()) return;
-    setMessages([...messages, { id: messages.length + 1, sender: 'Você', text: msg }]);
+    setMessages(prev => [...prev, { id: prev.length + 1, sender: 'Você', text: msg }]);
   };
 
-  // Scroll automático sempre que uma nova mensagem for adicionada
+  // Scroll automático
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
+  // Mock de status de partida
   useEffect(() => {
     const interval = setInterval(() => {
       const status = getLiveStatus();
@@ -29,11 +30,11 @@ const ChatBox = () => {
         sender: 'FURIA',
         text: status
       }]);
-    }, 8000); // A cada 8 segundos
-  
-    return () => clearInterval(interval); // limpa ao sair
+    }, 8000);
+
+    return () => clearInterval(interval);
   }, []);
-  
+
   return (
     <div style={{
       backgroundColor: '#0d0d0d',
@@ -42,6 +43,7 @@ const ChatBox = () => {
       padding: '30px',
       fontFamily: 'Arial, sans-serif'
     }}>
+      {/* Topo com logo e título */}
       <div style={{ textAlign: 'center', marginBottom: '20px' }}>
         <img 
           src="/Furia_Esports_logo.png" 
@@ -54,6 +56,7 @@ const ChatBox = () => {
         }}>Chat da Torcida 🎮</h2>
       </div>
 
+      {/* Área de mensagens */}
       <div style={{
         background: '#1a1a1a',
         borderRadius: '10px',
@@ -72,7 +75,22 @@ const ChatBox = () => {
         <div ref={messagesEndRef} />
       </div>
 
+      {/* Campo de envio */}
       <InputMessage onSend={handleSend} />
+
+      {/* Imagem fixa no canto inferior direito */}
+      <img 
+        src="/Futere_is_black.png" 
+        alt="Future is Black" 
+        style={{
+          position: 'fixed',
+          bottom: '15px',
+          right: '15px',
+          width: '120px',
+          opacity: 0.9,
+          zIndex: 10
+        }}
+      />
     </div>
   );
 };
