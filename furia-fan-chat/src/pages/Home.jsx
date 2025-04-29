@@ -12,14 +12,17 @@ const Home = ({ onEnter }) => {
       justifyContent: 'center',
       padding: '40px',
       fontFamily: 'Arial, sans-serif',
-      textAlign: 'center'
+      textAlign: 'center',
+      position: 'relative'
     }}>
+      {/* Logo da FURIA */}
       <img 
         src="/Furia_Esports_logo.png" 
         alt="Logo FURIA" 
         style={{ width: '120px', marginBottom: '20px' }} 
       />
 
+      {/* Título e descrição */}
       <h1 style={{
         color: '#FFD700',
         textShadow: '0 0 10px rgba(255, 215, 0, 0.6)',
@@ -33,6 +36,7 @@ const Home = ({ onEnter }) => {
         Conecte-se com a torcida, acompanhe os jogos e vibre junto com o time! 🐆🔥
       </p>
 
+      {/* Botão de entrar no chat */}
       <button 
         onClick={onEnter}
         style={{
@@ -49,6 +53,20 @@ const Home = ({ onEnter }) => {
       >
         Entrar no Chat
       </button>
+
+      {/* Imagem "Future is Black" no canto inferior direito */}
+      <img 
+        src="/Futere_is_black.png" 
+        alt="Future is Black" 
+        style={{
+          position: 'fixed',
+          bottom: '15px',
+          right: '15px',
+          width: '120px',
+          opacity: 0.9,
+          zIndex: 10
+        }}
+      />
     </div>
   );
 };
