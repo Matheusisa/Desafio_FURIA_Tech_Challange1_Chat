@@ -1,95 +1,96 @@
-# 🕹️ FURIA Fan Chat - Challenge 1
+# 🐆 FURIA Fan Chat – Challenge 1
 
-## 📌 Sobre o Projeto
+## 🔥 Sobre o Projeto
 
-O FURIA Fan Chat é uma plataforma conversacional desenvolvida para proporcionar uma experiência imersiva aos fãs do time de CS:GO da FURIA.  
-O objetivo é criar um espaço interativo onde os fãs possam acompanhar partidas em tempo real, simular conversas de torcida e se manter conectados com o time de forma divertida e dinâmica.
+O **FURIA Fan Chat** é uma plataforma conversacional desenvolvida para proporcionar uma experiência imersiva aos fãs do time de CS:GO da FURIA. O objetivo é criar um espaço interativo onde os fãs possam acompanhar partidas em tempo real, simular conversas de torcida e se manter conectados com o time de forma divertida e dinâmica.
 
 Este projeto foi desenvolvido como parte do processo seletivo para Assistente de Engenharia de Software da FURIA Tech.
 
+---
+
 ## 🎯 Funcionalidades
 
-- **Landing Page de Boas-Vindas ao chat da FURIA.**
-- **Sistema de Chat Simulado:**
+- **Landing Page de Boas-Vindas**:
+  - Tema escuro e detalhes em dourado.
+  - Logo da FURIA e imagem "Future is Black".
+- **Sistema de Chat Simulado**:
   - Mensagens do time e dos fãs em tempo real.
-  - Experiência de torcida durante as partidas.
-- **Atualizações ao Vivo (Live Status):**
-  - Status do jogo atualizado na tela do chat.
-- **Experiência fluida e responsiva para desktop e mobile.**
-- **Design inspirado em comunidades gamers e esportivas.**
+  - Atualizações automáticas de status da partida.
+  - Reações da torcida com emojis e frases animadas.
+  - Scroll automático para a última mensagem.
+- **Design Responsivo**:
+  - Interface inspirada em comunidades gamers e esportivas.
 
-## 🧩 Tecnologias Utilizadas
+---
 
-- **Front-end:** React.js  
-- **Back-end (opcional):** Node.js + WebSocket (para simular interações em tempo real)  
-- **Banco de Dados (opcional para mensagens reais):** Firebase Firestore  
-- **Hospedagem:** Vercel  
-- **Estilização:** TailwindCSS  
-- **Versionamento:** Git & GitHub  
+## 🛠️ Tecnologias Utilizadas
 
-## 🏗️ Estrutura do Projeto
+- **Front-end**: React.js
+- **Estilização**: CSS inline (tema dark + dourado)
+- **Simulações**: Funções mock para status ao vivo e torcida
+
+---
+
+## 🚀 Instalação e Execução
+
+1. **Clone o repositório**:
+
+   ```bash
+   git clone https://github.com/Matheusisa/Desafio_FURIA_Tech_Challange1_Chat.git
+   ```
+
+2. **Navegue até o diretório do projeto**:
+
+   ```bash
+   cd Desafio_FURIA_Tech_Challange1_Chat/furia-fan-chat
+   ```
+
+3. **Instale as dependências**:
+
+   ```bash
+   npm install
+   ```
+
+4. **Inicie a aplicação**:
+
+   ```bash
+   npm start
+   ```
+
+5. **Acesse em** [http://localhost:3000](http://localhost:3000).
+
+---
+
+## 📂 Estrutura do Projeto
 
 ```
 furia-fan-chat/
 ├── public/
-│   └── assets/
+│   ├── Furia_Esports_logo.png
+│   └── Future_is_black.png
 ├── src/
 │   ├── components/
 │   │   ├── ChatBox.jsx
-│   │   ├── Message.jsx
 │   │   ├── InputMessage.jsx
+│   │   └── Message.jsx
 │   ├── pages/
 │   │   └── Home.jsx
 │   ├── services/
-│   │   └── (simulações de API para live status)
-│   └── App.jsx
-├── README.md
-└── package.json
+│   │   └── liveStatus.js
+│   ├── App.jsx
+│   └── index.js
 ```
 
-## 🚀 Como Rodar o Projeto
+---
 
-### Pré-requisitos
+## 🎨 Estilo Visual
 
-- Node.js (v18 ou superior)  
-- NPM ou Yarn instalado  
+- **Tema**: Escuro com dourado (identidade visual da FURIA).
+- **Logo da FURIA**: Visível na Home e no topo do chat.
+- **Imagem "Future is Black"**: Fixa no canto inferior direito em todas as telas.
 
-### Instalação
+---
 
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/furia-fan-chat.git
+## 🤝 Contribuição
 
-# Acesse a pasta do projeto
-cd furia-fan-chat
-
-# Instale as dependências
-npm install
-# ou
-yarn install
-
-# Rode o projeto
-npm run start
-# ou
-yarn start
-```
-
-## 🎥 Demonstração em Vídeo
-
-Assista o vídeo demonstrativo com todas as funcionalidades clicando aqui:  
-🔗 **Link para o vídeo no YouTube (substituir pelo link final)**
-
-## 📄 Referências e Inspirações
-
-- [Chat Inteligente FURIA (Closed Beta - WhatsApp)](https://wa.me/5511993404466)  
-- Conceitos de Live Chat em apps esportivos.  
-- Experiência de comunidades no Discord e Twitch.  
-
-## 👨‍💻 Autor
-
-Feito com muita dedicação por Matheus [Seu Sobrenome].  
-Buscando sempre entregar soluções criativas e eficientes no universo de tecnologia e e-sports. 🎮🚀
-
-## 🎯 Conclusão
-
-O FURIA Fan Chat é mais do que um chat — é uma experiência pensada para o fã vibrar junto com o time, fortalecendo ainda mais a paixão pelo universo competitivo dos e-sports!
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
