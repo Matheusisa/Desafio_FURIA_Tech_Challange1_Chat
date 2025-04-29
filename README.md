@@ -91,14 +91,12 @@ furia-fan-chat/
 
 ---
 
-## 🎥 Demonstração em Vídeo
 
-Veja abaixo uma demonstração do projeto em vídeo:
+## 🎥 Demonstração em GIF
 
-<video controls width="100%">
-  <source src="./public/FURIA Fan Chat.mp4" type="video/mp4">
-  Seu navegador não suporta a exibição de vídeos.
-</video>
+Veja abaixo uma demonstração do projeto em GIF:
+
+![Demonstração do FURIA Fan Chat](./furia-fan-chat/public/FURIA%20Fan%20Chat%20gif.gif)
 
 ---
 
