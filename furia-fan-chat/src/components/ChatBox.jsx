@@ -9,6 +9,18 @@ const ChatBox = () => {
     { id: 2, sender: 'Fã', text: 'VAMOOO FURIAAAA!' }
   ]);
 
+  const getCrowdReaction = () => {
+    const reactions = [
+      "VAAAAAI FURIAAAAAA 🔥🔥🔥",
+      "É TETRAAA! 🏆🏆🏆🏆",
+      "DOMINA O MAPA! 🎮🐆",
+      "UUUUUUHHHHHH 💥💥",
+      "BORA FURIAAAA 🗣️🗣️"
+    ];
+    const random = Math.floor(Math.random() * reactions.length);
+    return reactions[random];
+  };
+  
   const messagesEndRef = useRef(null);
 
   const handleSend = (msg) => {
@@ -25,11 +37,12 @@ const ChatBox = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       const status = getLiveStatus();
-      setMessages(prev => [...prev, {
-        id: prev.length + 1,
-        sender: 'FURIA',
-        text: status
-      }]);
+      setMessages(prev => [
+        ...prev,
+        { id: prev.length + 1, sender: 'FURIA', text: status },
+        { id: prev.length + 2, sender: 'Torcida', text: getCrowdReaction() }
+      ]);
+      
     }, 8000);
 
     return () => clearInterval(interval);
