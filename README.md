@@ -1,4 +1,5 @@
-# 🐆 FURIA Fan Chat – Challenge 1
+## FURIA Fan Chat – Challenge 1  <img src="./furia-fan-chat/public/Furia_Esports_logo.png" alt="FURIA Esports Logo" width="20" /> 
+
 
 ## 🔥 Sobre o Projeto
 
