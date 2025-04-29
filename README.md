@@ -91,6 +91,17 @@ furia-fan-chat/
 
 ---
 
+## 🎥 Demonstração em Vídeo
+
+Veja abaixo uma demonstração do projeto em vídeo:
+
+<video controls width="100%">
+  <source src="./public/FURIA Fan Chat.mp4" type="video/mp4">
+  Seu navegador não suporta a exibição de vídeos.
+</video>
+
+---
+
 ## 🤝 Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
