@@ -16,10 +16,10 @@ const InputMessage = ({ onSend }) => {
       onSubmit={handleSubmit} 
       style={{ 
         display: 'flex', 
-        gap: '10px', 
-        background: '#111', 
-        padding: '10px', 
-        borderRadius: '10px' 
+        gap: '10px',
+        background: '#111',
+        padding: '10px',
+        borderRadius: '10px'
       }}
     >
       <input
@@ -29,22 +29,24 @@ const InputMessage = ({ onSend }) => {
         placeholder="Digite sua mensagem..."
         style={{ 
           flex: 1, 
-          padding: '10px', 
-          borderRadius: '8px', 
-          border: '1px solid #444',
-          backgroundColor: '#222',
+          padding: '10px',
+          borderRadius: '8px',
+          border: '1px solid #FFD700',
+          backgroundColor: '#1a1a1a',
           color: '#fff'
         }}
       />
       <button 
         type="submit" 
         style={{
-          backgroundColor: '#f00',
-          color: '#fff',
+          background: 'linear-gradient(90deg, #FFD700, #FFC300)',
+          color: '#000',
           padding: '10px 20px',
           border: 'none',
           borderRadius: '8px',
-          cursor: 'pointer'
+          fontWeight: 'bold',
+          cursor: 'pointer',
+          boxShadow: '0 0 10px rgba(255, 215, 0, 0.4)'
         }}
       >
         Enviar

@@ -14,35 +14,42 @@ const ChatBox = () => {
   };
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', padding: '20px' }}>
-      {/* Logo */}
-      <div style={{ textAlign: 'center' }}>
+    <div style={{
+      backgroundColor: '#0d0d0d',
+      minHeight: '100vh',
+      color: '#fff',
+      padding: '30px',
+      fontFamily: 'Arial, sans-serif'
+    }}>
+      <div style={{ textAlign: 'center', marginBottom: '20px' }}>
         <img 
           src="/Furia_Esports_logo.png" 
           alt="Logo FURIA" 
           style={{ width: '80px', marginBottom: '10px' }} 
         />
-        <h2>Chat da Torcida 🎮</h2>
+        <h2 style={{
+          color: '#FFD700',
+          textShadow: '0 0 10px rgba(255, 215, 0, 0.5)'
+        }}>Chat da Torcida 🎮</h2>
       </div>
 
-      {/* Caixa de mensagens */}
       <div style={{
-        background: '#f5f5f5',
-        borderRadius: '8px',
-        padding: '10px',
+        background: '#1a1a1a',
+        borderRadius: '10px',
+        padding: '15px',
         height: '300px',
         overflowY: 'auto',
-        marginBottom: '10px',
+        marginBottom: '15px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '5px'
+        gap: '8px',
+        boxShadow: '0 0 8px rgba(255, 215, 0, 0.15)'
       }}>
         {messages.map(msg => (
           <Message key={msg.id} sender={msg.sender} text={msg.text} />
         ))}
       </div>
 
-      {/* Campo de envio */}
       <InputMessage onSend={handleSend} />
     </div>
   );
