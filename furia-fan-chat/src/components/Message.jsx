@@ -23,6 +23,7 @@ const Message = ({ sender, text }) => {
 
   return (
     <div style={{
+      animation: 'fadeIn 0.3s ease-in',
       background: backgroundColor,
       color: textColor,
       padding: '10px 15px',

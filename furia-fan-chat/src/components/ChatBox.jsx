@@ -20,7 +20,7 @@ const ChatBox = () => {
     const random = Math.floor(Math.random() * reactions.length);
     return reactions[random];
   };
-  
+
   const messagesEndRef = useRef(null);
 
   const handleSend = (msg) => {
@@ -33,7 +33,7 @@ const ChatBox = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  // Mock de status de partida
+  // Mock de status da partida
   useEffect(() => {
     const interval = setInterval(() => {
       const status = getLiveStatus();
@@ -42,7 +42,6 @@ const ChatBox = () => {
         { id: prev.length + 1, sender: 'FURIA', text: status },
         { id: prev.length + 2, sender: 'Torcida', text: getCrowdReaction() }
       ]);
-      
     }, 8000);
 
     return () => clearInterval(interval);
@@ -56,6 +55,13 @@ const ChatBox = () => {
       padding: '30px',
       fontFamily: 'Arial, sans-serif'
     }}>
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+    `}</style>
+
       {/* Topo com logo e título */}
       <div style={{ textAlign: 'center', marginBottom: '20px' }}>
         <img 
